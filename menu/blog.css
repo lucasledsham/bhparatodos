@@ -1,0 +1,341 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* height: 100px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E9E9E9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B70707;
+  border-radius: 6px;
+}
+
+/* Menu */
+
+header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  gap: 550px;
+  /* justify-content: space-between; */
+  background-color: white;
+  padding: 20px;
+  padding-left: 100px;
+  width: 100%;
+  top: 0;
+}
+
+.icone-menu {
+  width: 225px;
+}
+
+.menu {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+}
+
+.menu-sobre,
+.menu-contato {
+  color: #300707;
+}
+
+.menu-blog {
+  color: rgb(48, 7, 7, 0.6);
+}
+
+.menu-sobre:hover,
+.menu-contato:hover {
+  color: rgb(48, 7, 7, 0.6);
+}
+
+.menu-voluntario {
+  background-color: red;
+  color: white;
+  padding: 30.5px;
+  padding-top: 35px;
+}
+
+.menu-voluntario:hover {
+  background: #900;
+}
+
+/* Título */
+
+.titulo {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: #4f0101;
+  font-weight: bolder;
+  margin-top: 105px;
+}
+
+/* Artigos */
+
+.tela {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  
+}
+
+.ordem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+}
+
+.artigo {
+  display: grid;
+  max-width: 280px;
+  max-height: 400px;
+  padding: 25px;
+  text-align: center;
+  gap: 40px;
+}
+
+.artigo h2 {
+  color: #4f0101;
+  font-family: "Work Sans", sans-serif;
+}
+
+.artigo img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 270px;
+  height: 213px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.artigo:hover {
+  transform: scale(1.02);
+}
+
+.teste {
+  display: grid;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  gap: 10px;
+  padding: 10px;
+  max-width: 250px;
+  height: 200px;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.economia {
+  font-family: "Work Sans", sans-serif;
+  color: #c64b4b;
+}
+
+/* Destaque */
+
+.blog-destaque {
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.lado {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 30px;
+}
+
+.lado-style {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 15px;
+  padding: 16px;
+  border-left: 4px solid transparent;
+}
+
+.lado-style a {
+  font-family: "Work Sans", sans-serif;
+  color: #4f0101;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.lado-style:nth-child(odd) {
+  background-color: white;
+}
+
+.lado-style:hover {
+  border-left: 4px solid red;
+}
+
+.numero {
+  font-size: 25px;
+  color: #c64b4b;
+}
+
+.destaque {
+  font-family: "Work Sans", sans-serif;
+  color: rgb(20, 24, 26);
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Rodapé 1 */
+
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 70px;
+}
+
+.div1 {
+  background-color: #7d0f0f;
+  display: grid;
+  justify-items: center;
+  color: white;
+}
+
+.div1 h3 {
+  margin-top: 70px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.div1 h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.div1-items {
+  display: flex;
+  gap: 160px;
+  margin-bottom: 70px;
+}
+
+.div1-items a {
+  color: white;
+}
+
+#div1-email {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+  display: grid;
+  align-self: center;
+}
+
+.div1-voluntario {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  border: 4px solid white;
+  border-radius: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  align-self: center;
+}
+
+.div1-voluntario:hover {
+  background-color: white;
+  border: 4px solid #7d0f0f;
+  color: #7d0f0f;
+}
+
+.div1-insta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+}
+
+.footer-insta {
+  width: 40px;
+}
+
+/* Rodapé 2 */
+
+.div2 {
+  margin-top: 70px;
+  display: grid;
+  justify-items: center;
+}
+
+.div2 p {
+  font-family: "Amatic SC", cursive;
+  font-size: 3.4rem;
+  word-wrap: break-word;
+  margin-left: 300px;
+  margin-right: 300px;
+  color: #4f0101;
+  text-align: center;
+}
+
+.div2 h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #b03434;
+  margin-top: 15px;
+}
+
+.div2 span {
+  content: "";
+  width: 1000px;
+  height: 2px;
+  background-color: rgb(232, 128, 128, 0.3);
+  margin-top: 100px;
+}
+
+.div2 h4 {
+  font-family: "Work Sans", sans-serif;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.div2 a {
+  color: #7d0f0f;
+}
