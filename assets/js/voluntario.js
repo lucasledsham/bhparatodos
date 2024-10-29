@@ -33,10 +33,10 @@ document.querySelectorAll('.carrossel section').forEach(section => {
 //BUSCA
 
 const searchInput = document.getElementById('searchInput');
-const tabs = document.querySelectorAll('.radio'); // Seleciona todos os inputs das abas
+const tabs = document.querySelectorAll('.radio');
 
 searchInput.addEventListener('focus', function() {
-    document.getElementById('dois').checked = true; // Marca a opção A-Z
+    document.getElementById('dois').checked = true;
 });
 
 searchInput.addEventListener('input', function() {
@@ -46,9 +46,9 @@ searchInput.addEventListener('input', function() {
     cards.forEach(card => {
         const title = card.querySelector('h3').textContent.toLowerCase();
         if (title.includes(filter)) {
-            card.style.display = ''; // Mostra o card
+            card.style.display = '';
         } else {
-            card.style.display = 'none'; // Esconde o card
+            card.style.display = 'none';
         }
     });
 });
@@ -58,12 +58,12 @@ tabs.forEach(tab => {
     tab.addEventListener('change', function() {
         // Limpa o campo de busca
         searchInput.value = '';
-        searchInput.style.display = 'none'; // Esconde o input
+        searchInput.style.display = 'none';
         const cards = document.querySelectorAll('.card-full');
         
         // Mostra todos os cards novamente
         cards.forEach(card => {
-            card.style.display = ''; // Exibe todos os cards
+            card.style.display = '';
         });
     });
 });
