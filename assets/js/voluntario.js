@@ -58,6 +58,7 @@ tabs.forEach(tab => {
     tab.addEventListener('change', function() {
         // Limpa o campo de busca
         searchInput.value = '';
+        searchInput.style.display = 'none'; // Esconde o input
         const cards = document.querySelectorAll('.card-full');
         
         // Mostra todos os cards novamente
@@ -67,4 +68,16 @@ tabs.forEach(tab => {
     });
 });
 
+// Funcionalidade do ícone de busca
+(function() {
+    const searchIcon = document.getElementById('searchIcon');
 
+    searchIcon.addEventListener('click', function() {
+        if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        } else {
+            searchInput.style.display = 'none';
+        }
+    });
+})();

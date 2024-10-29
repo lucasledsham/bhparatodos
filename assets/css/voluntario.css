@@ -247,12 +247,27 @@ header {
   color: white;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon img {
+  width: 30px;
+}
+
 #searchInput {
   border-radius: 10px;
   border: 2px solid rgb(255, 0, 0, 0.5) ;
   max-width: 300px;
-  width: 100%; /* Ajuste a largura conforme necessário */
-  padding: 10px; /* Adicione algum preenchimento para melhorar a aparência */
+  width: 350px;
+  padding: 10px;
 }
 
 #searchInput:focus {
