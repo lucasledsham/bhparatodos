@@ -21,7 +21,7 @@ const cardsData = [
       alt: "Card Abraço",
       title: "Abraço",
       location: "Belo Horizonte/MG",
-      description: "A Abraço tem por finalidade proporcionar atenção integral ao indivíduo, a família e a sociedade."
+      description: "A Abraço tem por finalidade proporcionar atenção integral ao indivíduo, a família e a sociedade, gerando bem-estar e melhor qualidade de vida através da prevenção, do atendimento individual e em grupo, incentivo ao esporte e cultura, cuidado e acolhimento institucional para pessoas em situação de vulnerabilidade."
   },
   {
       href: "../projetos/abrigo-balaio-de-gato.html",
@@ -29,7 +29,7 @@ const cardsData = [
       alt: "Card Abrigo Balaio de Gato",
       title: "Abrigo Balaio de Gato",
       location: "Belo Horizonte/MG",
-      description: "Somos um projeto independente de Minas Gerais, no qual ajudamos a resgatar, providenciamos tratamento veterinário."
+      description: "Somos um projeto independente de Minas Gerais, no qual ajudamos a resgatar, providenciamos tratamento veterinário e realizamos adoções de maneira responsável a animais recolhidos das ruas da capital, Belo Horizonte. Hoje mantemos aproximadamente 200 animais sob nossa responsabilidade e como não conseguimos resgatar e salvar a todos, trabalhamos também fazendo uma conscientização e orientação da população para que pessoas que encontrem um animal em perigo possam ajudar e também fazer a diferença!"
   },
   {
     href: "../projetos/acao-mudando-vidas.html",
