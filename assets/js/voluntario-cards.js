@@ -697,25 +697,44 @@ const cardsData = [
 }
 ];
 
-// Obter todos os <li> no container
 const cardsContainer = document.getElementById('cards-container');
 const listItems = Array.from(cardsContainer.querySelectorAll('.card-full'));
 
-// Preencher os <li> com os dados dos cards com base no title
-listItems.forEach(li => {
-  const title = li.getAttribute('data-title');
-  const card = cardsData.find(c => c.title === title);
-  
-  if (card) {
-      li.innerHTML = `
-          <a href="${card.href}">
-              <img src="${card.imgSrc}" class="card-img" alt="${card.alt}">
-              <div class="card-body">
-                  <h3>${card.title}</h3>
-                  <span>${card.location}</span>
-                  <p>${card.description}</p>
-              </div>
-          </a>
-      `;
-  }
-});
+// Função para preencher os cards
+function fillCards() {
+    listItems.forEach(li => {
+        const title = li.getAttribute('data-title');
+        const card = cardsData.find(c => c.title === title);
+        const type = li.getAttribute('data-type'); // Obter o tipo do card
+        
+        if (card) {
+            if (type === 'carrossel') {
+                li.innerHTML = `
+                    <a href="${card.href}">
+                        <img src="${card.imgSrc}" class="card-img" alt="${card.alt}">
+                        <div class="card-body-carrossel">
+                            <h3>${card.title}</h3>
+                            <span>${card.location}</span>
+                            <p>${card.description}</p>
+                        </div>
+                    </a>
+                `;
+            } else {
+                li.innerHTML = `
+                    <a href="${card.href}">
+                        <img src="${card.imgSrc}" class="card-img" alt="${card.alt}">
+                        <div class="card-body">
+                            <h3>${card.title}</h3>
+                            <span>${card.location}</span>
+                            <p>${card.description}</p>
+                        </div>
+                    </a>
+                `;
+            }
+        }
+    });
+}
+
+// Chame a função para preencher os cards
+fillCards();
+
