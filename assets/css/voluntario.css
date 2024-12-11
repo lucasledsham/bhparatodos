@@ -556,6 +556,23 @@ header {
   gap: 35px;
 }
 
+/* LGBTQIAP+ */
+
+.carrossel-lgbt {
+  display: grid;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carrossel-lgbt section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  gap: 40px;
+  margin-left: 131px;
+}
+
 /* Rodapé 1 */
 
 .footer {
